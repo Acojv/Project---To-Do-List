@@ -1,0 +1,157 @@
+/* geral */
+*{/**/
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;/*Definindo uma fonte*/
+    color:#333; /*definindo cor*/
+    box-sizing: border-box;  /*anula a bordas e margens*/
+  }
+  body{
+      background-image: url("../img/bg\ \(1\).jpg");/* adicionando imagem de fundo */
+      background-position: center; /* posicionando a img */
+      background-size: cover; /* adapta na imagem do usuario */
+  }
+  button{
+      background-color: #fdfdfd; /*cor fundo button */
+      color: #102f5e; /* cor do button */
+      border : 2px solid #102f5e ; /**/
+      padding: .3rem .6rem;/* rem - adapta a unidade de medida */
+      font-size: 1rem; /*Tamanho da fonte*/
+      display:flex ; /* alinha e destribui espaços */
+      justify-items: center;/*controla o alinhamento de todos os itens no eixo principal */
+      align-items: center;/* controla o alinhamento de todos os itens */
+      transition: 0.4s; /* efeitos de animação */
+  }
+  button:hover{ /* animação com o mouse no propriedade indicada */
+      background-color: #102f50; /**/
+      color: #fff;
+  }
+  
+  button:hover > i{ /* cor do icone */
+      color: #fff;
+  } 
+  button i{ /*icone button*/
+      color:#102f50;/* cor icone */
+      font-weight: bold;/*intensidade fonte*/
+      pointer-events: none;/*desabilitar eventos de click*/
+  }
+  input,select{/* caixa de seletores */
+      padding: 0.25rem 0.5rem;/* espaçamento */
+  }
+  .hide { /*nova classe*/
+    display: none; /* remove o elemento */
+  }
+  
+  /* todo header*/
+  .todo-container{
+      max-width: 450px ;/*largura maxima*/
+      margin: 3rem auto 0; /* centro pagina*/
+      background-color: #fdfdfd;/**/
+      padding: 1.5rem;/* distancia o elemento e suas bordas */
+      border-radius: 20px;
+  }
+  .todo-container header{ /* (Cabeçalho) titulo pagina */
+      text-align: center ;/* alinhamento */
+      padding: 0 1rem 1rem ;/* espaçamneto */
+      border-bottom: 1px solid #ccc ; /* define a espessura da linha*/
+  }
+  
+  /* todo form */
+  #todo-form, #edit-form{
+      padding:1rem;/**/
+      border-bottom: 1px solid #ccc; /* define a espessura da linha */
+      
+  }
+  #todo-form p, #edit-form p{ /* afastando formulario */
+     margin-bottom: 0.5rem;  /* espaço para baixo */
+     font-weight: bold; /* peso,intensidade da fonte */
+  }
+  .form-control{/* icones */
+      display: flex; /* alinha e destribui espaços */
+  }
+  .form-control input{ /* espaçamento icones */
+      margin-right: .3rem; /* define dimensão da margem */
+  }
+  
+  #cancel-edit-bnt {
+      margin-top: 1rem;/* espaço acima */
+  }
+  
+  /* todo toolbar */
+  
+  #toolbar { /* pesquisar */
+      padding: 1rem; /**/
+      border-bottom: 1px solid #ccc; /* define a espessura da linha */
+      display: flex; /* alinha e destribui espaços */
+  }
+  #toolbar h4{
+      margin-bottom: .5rem;
+  }
+  
+  #search{ /*pesquisar e filtrar*/
+    border-right: 1px solid #ccc; /* borda reta */
+    padding-right: 1rem;/* define a distancia */
+    margin-right: 1rem; /* separa do canto  */
+    width: 65%; /* largura */
+    display: flex; /* alinha e destribui espaços */
+    flex-direction: column; /*  altera a direção */
+  }
+  #search form { /**/
+      display: flex;/* botão ao lado do formulario */
+  }
+  #search input { /* barra pesquisar */
+      width: 100%;
+      margin-right: 0.3rem; /* define dimensão da margem , separou */
+  }
+  
+  #filter { /* filtrar */
+      width: 35% ;/* largura  */
+      display: flex ; /* separa */
+      flex-direction: column ; /*  */
+  }
+  
+  #filter select {
+      flex: 1;
+  }
+  
+  
+  /* todo list */
+  .todo{
+       display: flex; /**/
+       justify-content: space-around;/* distribuidos no espaço disponivel*/
+       align-items: center; /* controla o alinhamento de todos os itens  */
+       padding: 1rem; /* rem - adapta a unidade de medida */
+       border-bottom: 1px solid #ccc; /* bordar */
+       transition: .3s;
+  }
+  .todo h3 {
+      flex:1; /* ocupar largura possivel*/
+      font-size: .9rem; /* tamanho da font */
+  
+  }
+  .todo button{
+      margin-left: 0.4rem;/* define a margin esquerda */
+  
+  }
+   
+  .done{ /*   */
+      background-color: #102f50; /* cor de fundo */
+  }
+  .done h3{ /**/
+      color: #ccc; /* cor */
+      text-decoration: line-through;/* linha atravesando o texto*/
+      font-style: italic; /* font, destacra e enfatizar uma palavra */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
